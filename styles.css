@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f8f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Header */
+header {
+    background-color: #2b7a4b; /* Greenish theme */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .title {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffb74d; /* Golden hover effect */
+}
+
+/* Section */
+section {
+    margin: 60px 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2b7a4b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* License & Contact Links */
+.link {
+    color: #2b7a4b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ffb74d;
+}
+
+/* Footer */
+footer {
+    background-color: #2b7a4b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+/* Add some subtle animations for scroll */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
